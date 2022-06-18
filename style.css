@@ -74,6 +74,11 @@ body {
     right: 10px;
   }
 
+#close:hover,
+#close:focus {
+    cursor: pointer;
+}
+
   .modal-content {
     display: flex;
     flex-direction: column;
@@ -91,3 +96,20 @@ body {
   input, select {
     height: 20px;
   }
+
+.submit {
+    background-color: var(--header-color);
+    border: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.submit:hover,
+.submit:focus {
+    cursor: pointer;
+    color: white;
+    background-color: var(--container-color);
+}
