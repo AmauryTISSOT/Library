@@ -2,8 +2,10 @@ const btn = document.querySelector('.add-button');
 const modal = document.querySelector('.modal');
 const closeSpan = document.querySelector('#close');
 const divBookList = document.querySelector('.book-list');
-const trash = document.querySelector('.trash-icon')
-
+const trash = document.querySelector('.trash-icon');
+const form = document.querySelector('form');
+const submit = document.querySelector('.submit');
+const getTitle = document.querySelector('#get-title');
 // Function who open the modal popup
 
 const btnAdd = () => {
@@ -44,8 +46,25 @@ const deleteBookList = () => {
         divClone.style.display= "none";
 })};
 
-btnAdd();
-closeBtn();
-windowCloseModal();
-deleteBookList();
-newBookDisplay(1);
+
+// Function listener submit button
+
+const submitBtn = () =>{
+    submit.addEventListener('click', (event) => {
+        event.preventDefault();
+        console.log(getTitle.value)})
+};
+
+
+// Main function
+
+const main = () => {
+    btnAdd();
+    closeBtn();
+    windowCloseModal();
+    deleteBookList();
+    submitBtn();
+    //newBookDisplay(1);
+}
+
+main();
