@@ -14,30 +14,38 @@
     </div>
 
     <div class="container">
+        <div class="book-list" id="0">
+            <h3>Title</h3>
+            <div class="title-display">test</div>
+            <h3>Author</h3>
+            <div class="author-display">test</div>
+            <h3>Numbers of pages</h3>
+            <div class="number-of-pages-display">test</div>
+            <h3>Reading status</h3>
+            <div class="reading-statuts-display">test</div>
+            <div class="trash"><div class="trash-icon"><img src="/icons/delete-outline.png" alt="delete icons"></div></div>
+        </div>
+        
     </div>
 
     <div class="modal">
         <div class="modal-content">
             <span id="close">&times;</span>
             <h2 class="title">New Book</h2>
-            <h3>Title :</h3>
-            <form action="#" class="get-title">
-                <input type="text">
-            </form>
-            <h3>Author :</h3>
-            <form action="#" class="get-author">
-                <input type="text">
-            </form>
-            <h3>Numbers of pages :</h3>
-            <form action="" class="get-numOfPages">
-                <input type="text">
-            </form>
-            <h3>Did you read the book ?</h3>
-            <select name="#" id="">
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-            </select>
+            <form action="#" method="get">
+                <h3>Title :</h3>
+                <input type="text" id="get-title" name="title" placeholder="Book title" required>
+                <h3>Author :</h3>
+                <input type="text" id="get-author" name="author" placeholder="Book title" required>
+                <h3>Numbers of pages :</h3>
+                <input type="text" id="get-pages" name="pages" placeholder="" required>
+                <h3>Did you read the book ?</h3>
+                <select name="read" id="get-read">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
             <button class="submit">SUBMIT</button>
+            </form>
         </div>
     </div>
     

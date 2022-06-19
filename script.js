@@ -1,6 +1,8 @@
 const btn = document.querySelector('.add-button');
 const modal = document.querySelector('.modal');
-const closeSpan = document.querySelector('#close')
+const closeSpan = document.querySelector('#close');
+const divBookList = document.querySelector('.book-list');
+const trash = document.querySelector('.trash-icon')
 
 // Function who open the modal popup
 
@@ -23,6 +25,27 @@ const windowCloseModal = () => {
     }
 })};
 
+
+// Function who show the book-list class and create a new div
+
+const newBookDisplay = (newId) => {
+    const divClone = divBookList.cloneNode(true);
+    divClone.id = newId;
+    document.body.appendChild(divClone);
+    divBookList.style.display = "grid";
+    divClone.style.display = "grid";
+}
+
+// Function who delete the new book-list
+
+const deleteBookList = () => {
+    trash.addEventListener('click', () => {
+        divBookList.style.display = "none";
+        divClone.style.display= "none";
+})};
+
 btnAdd();
 closeBtn();
 windowCloseModal();
+deleteBookList();
+newBookDisplay(1);
