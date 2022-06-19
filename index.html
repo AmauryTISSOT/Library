@@ -16,14 +16,14 @@
     <div class="container">
         <div class="book-list" id="0">
             <h3>Title</h3>
-            <div class="title-display">test</div>
+            <div class="title-display"></div>
             <h3>Author</h3>
-            <div class="author-display">test</div>
+            <div class="author-display"></div>
             <h3>Numbers of pages</h3>
-            <div class="number-of-pages-display">test</div>
+            <div class="number-of-pages-display"></div>
             <h3>Reading status</h3>
-            <div class="reading-statuts-display">test</div>
-            <div class="trash"><div class="trash-icon"><img src="/icons/delete-outline.png" alt="delete icons"></div></div>
+            <div class="reading-status-display"></div>
+            <div class="trash"><div class="trash-icon" id=""><img src="/icons/delete-outline.png" alt="delete icons"></div></div>
         </div>
         
     </div>
@@ -36,15 +36,15 @@
                 <h3>Title :</h3>
                 <input type="text" id="get-title" value="" name="title"placeholder="Book title"required>
                 <h3>Author :</h3>
-                <input type="text" id="get-author" value="qsd" name="author" placeholder="Book title" required>
+                <input type="text" id="get-author" value="" name="author" placeholder="Book title" required>
                 <h3>Numbers of pages :</h3>
-                <input type="text" id="get-pages" value="12" name="pages" placeholder="" required>
+                <input type="text" id="get-pages" value="" name="pages" placeholder="" required>
                 <h3>Did you read the book ?</h3>
-                <select name="read" id="get-read">
+                <select name="read" id="get-read" required>
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
                 </select>
-            <button class="submit">SUBMIT</button>
+            <button type="submit" class="submit">SUBMIT</button>
             </form>
         </div>
     </div>
