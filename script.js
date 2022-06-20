@@ -40,7 +40,7 @@ const closeBtn = () => {
 // Function who close the modal popup when the user click on the window
 
 const windowCloseModal = () => {
-    window.addEventListener('click', () => {
+    window.addEventListener('click', (event) => {
         if (event.target == modal) {
               modal.style.display = "none";
     }
@@ -154,3 +154,8 @@ const main = () => {
 
 main();
 
+/* todo list : 
+- add a changing reading status button,
+- create the book-list with a loop of myLibrary (array + objects)
+
+*/
